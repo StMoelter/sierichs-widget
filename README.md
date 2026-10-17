@@ -91,6 +91,11 @@ shows "Unbekannt" instead of guessing when the status cannot be determined.
 
 This project is not affiliated with Biergarten Sierich.
 
+## Credits
+
+This project was created 100% with DeepSeek V4.1 Flash and
+[opencode](https://opencode.ai).
+
 ## License
 
 This project is released under the [MIT License](LICENSE).
