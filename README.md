@@ -95,8 +95,10 @@ Vercel project settings.
   screen".
 - **iPhone (Safari):** open the URL, tap Share, then "Add to Home Screen".
 
-A PWA cannot provide a native home-screen widget. The icon opens the status page
-directly; push notifications on status changes are a possible follow-up.
+The home-screen icon is intentionally neutral because PWA icons are static and
+cannot reflect the current status. A PWA also cannot provide a native home-screen
+widget. The icon opens the status page directly; push notifications on status
+changes are a possible follow-up.
 
 ## Data source
 
