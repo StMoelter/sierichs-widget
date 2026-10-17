@@ -4,6 +4,10 @@ A small installable web app that shows whether the Biergarten Sierich in
 Hamburg's Stadtpark is currently open. The status is read from the green/red
 traffic light on [sierichs.de](https://www.sierichs.de/).
 
+## Live
+
+[sierichs-widget.vercel.app](https://sierichs-widget.vercel.app)
+
 ## Features
 
 - Large green/red status indicator
@@ -66,12 +70,20 @@ npm run test:e2e:install
 
 ## Deployment
 
-1. Push the repository to GitHub.
-2. Import it as a new project in Vercel.
-3. Vercel detects Vite automatically.
-4. The `api/status.ts` function is deployed alongside the static build.
+The app is deployed as the Vercel project `sierichs-widget` in the `fra1`
+(Frankfurt) region. The static Vite build and the `/api/status` function are
+deployed together.
 
-The app is then available at `https://<project>.vercel.app`.
+Production: https://sierichs-widget.vercel.app
+
+Manual production deployment:
+
+```sh
+vercel --prod
+```
+
+For automatic deployments on every push, connect the GitHub repository in the
+Vercel project settings.
 
 ### Install on a phone
 
