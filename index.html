@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de" data-state="loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0b1210" />
+    <meta
+      name="description"
+      content="Zeigt, ob der Biergarten Sierich im Hamburger Stadtpark geöffnet hat."
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Sierichs" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
+    <title>Sierichs Ampel</title>
+  </head>
+  <body>
+    <main id="app" data-state="loading">
+      <header class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Biergarten Sierich</span>
+      </header>
+
+      <section class="status" aria-live="polite">
+        <div class="dot" aria-hidden="true">
+          <span class="dot-ring"></span>
+          <span class="dot-core"></span>
+        </div>
+        <h1 id="status-title">Status wird geladen</h1>
+        <p id="status-text">Einen Moment bitte.</p>
+      </section>
+
+      <section class="details">
+        <p id="checked-at" class="checked-at">&nbsp;</p>
+        <button id="refresh" class="refresh" type="button">
+          <span class="refresh-icon" aria-hidden="true"></span>
+          <span>Aktualisieren</span>
+        </button>
+        <p id="offline-note" class="note" hidden></p>
+      </section>
+
+      <footer class="footer">
+        <a href="https://www.sierichs.de/" target="_blank" rel="noreferrer">
+          sierichs.de öffnen
+        </a>
+        <p>Hamburger Stadtpark · Wetterabhängig</p>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
