@@ -8,6 +8,10 @@ traffic light on [sierichs.de](https://www.sierichs.de/).
 
 [sierichs-widget.vercel.app](https://sierichs-widget.vercel.app)
 
+[![QR code for the live app](docs/qr-code.png)](https://sierichs-widget.vercel.app)
+
+Scan the QR code with your phone to open the app directly.
+
 ## Features
 
 - Large green/red status indicator
